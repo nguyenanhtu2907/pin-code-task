@@ -1,0 +1,109 @@
+.home {
+  padding: 32px 48px;
+  text-align: center;
+
+  &__title {
+    margin: 24px 0;
+    font-size: 24px;
+
+    button {
+      cursor: pointer;
+      padding: 4px 6px;
+    }
+  }
+
+  &__codes {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+    flex-wrap: wrap;
+  }
+
+  &__settings {
+    width: 500px;
+    margin: 16px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    input {
+      font-size: 16px;
+      padding: 8px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 16px;
+    width: 500px;
+    margin: auto;
+
+    button {
+      padding: 8px 16px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+.pin-box {
+  &__input {
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 6px;
+    border-width: 1px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .home {
+    padding: 20px 16px;
+
+    &__title {
+      margin: 16px 0;
+      font-size: 20px;
+    }
+
+    &__codes {
+      gap: 16px;
+      margin: 16px 0;
+    }
+
+    &__settings {
+      width: 80vw;
+      margin: 16px auto;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+
+      input {
+        padding: 6px;
+        width: 100%;
+      }
+    }
+
+    &__actions {
+      gap: 16px;
+      width: 80vw;
+
+      button {
+        padding: 8px 16px;
+      }
+    }
+  }
+
+  .pin-box {
+    &__input {
+      padding: 8px;
+      height: 44px;
+      width: 44px;
+      font-size: 18px;
+    }
+  }
+}
